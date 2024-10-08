@@ -4,7 +4,7 @@ Este proyecto es una página web sencilla, fue hecho en 2023 y se trata de un AB
 
 ## 📘 Descripción
 
-El proyecto es ni más ni menos que una página web creada con HTML, CSS y JS. No está hosteada, así que para acceder a ella la mejor opción es usar Live Server o abrir el index.html. Se trata de un ABM de héroes y villanos donde el usuario verá una tabla con toda la información de cada personaje, tendrá opciones de filtrado, y podrá agregar, modificar o eliminar las entradas que quiera.
+El proyecto es ni más ni menos que una página web creada con HTML, CSS y JS. No está hosteada, así que para acceder a ella la mejor opción es usar Live Server o abrir el index.html. Se trata de un ABM de héroes y villanos donde el usuario verá una tabla con toda la información de cada personaje, tendrá opciones de filtrado, y podrá agregar, modificar o eliminar las entradas que quiera. Los datos de personajes ya están creados y salen del archivo 'personas.js'.
 
 ## 👨‍💻 Menú Principal 
 
