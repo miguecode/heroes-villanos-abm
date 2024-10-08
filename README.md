@@ -22,7 +22,9 @@ Así se ve la pantalla cuando se va a crear un nuevo héroe o villano.
 
 - **Ver datos**: En la tabla podemos ver la información de cada héroe o villano.
 - **Filtrar la tabla**: Podemos elegir entre ver sólo héroes, sólo villanos, o ambos. Y también podemos elegir qué columnas ver y cuáles no.
+- **Calcular edad promedio**: Al hacer clic en 'Calcular', se va a mostrar el promedio de edad de todos los personajes que se estén mostrando actualmente en la tabla.
 - **ABM**: Se pueden agregar nuevos héroes o villanos, modificarlos, o eliminarlos.
+  La idea para acceder a este formulario es hacer clic en 'Agregar' para realizar un Alta. Y para modificar o eliminar, basta con ver la tabla y hacer doble clic al personaje que se quiera alterar.
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
