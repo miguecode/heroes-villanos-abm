@@ -39,4 +39,4 @@ Otra forma más sencilla es simplemente abrir el archivo **index.html** directam
 - No se aceptan contribuciones ni está bajo ninguna licencia específica.
 
 ## 🗃️ Otros proyectos similares
-- []()
+- [Futbolistas y Profesionales - CRUD](https://github.com/Leumig/futbolistas-profesionales-crud)
