@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Héroes y Villanos</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script type="module" src="./js/funcionalidad/logica.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>ABM - Héroes y Villanos</h1>
+      </header>
+      <main class="contenedor-flex">
+        <section id="seccion-datos">
+          <!-- <h2>Form Datos</h2> -->
+          <form id="form-datos">
+            <div class="linea">
+              <label for="filtro">Filtrar por:</label>
+              <select name="selFiltro" id="filtro">
+                <option value="Todos">Todos</option>
+                <option value="Heroes">Heroes</option>
+                <option value="Villanos">Villanos</option>
+              </select>
+              <label for="promedio">Calcular Edad Promedio:</label>
+              <input
+                type="text"
+                name="txtPromedio"
+                id="promedio"
+                autocomplete="off"
+                disabled
+              />
+              <button class="botonStandard" type="button" id="calcular">
+                Calcular
+              </button>
+            </div>
+
+            <div class="linea">
+              <fieldset id="contenedor-checkbox">
+                <legend>Mostrar Columnas</legend>
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="id"
+                  id="chkID"
+                  checked
+                />ID
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="nombre"
+                  id="chkNombre"
+                  checked
+                />Nombre
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="apellido"
+                  id="chkApellido"
+                  checked
+                />Apellido
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="edad"
+                  id="chkEdad"
+                  checked
+                />Edad <br />
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="alterEgo"
+                  id="chkAlterEgo"
+                  checked
+                />Alter Ego
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="ciudad"
+                  id="chkCiudad"
+                  checked
+                />Ciudad
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="publicado"
+                  id="chkPublicado"
+                  checked
+                />Publicado <br />
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="enemigo"
+                  id="chkEnemigo"
+                  checked
+                />Enemigo
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="robos"
+                  id="chkRobos"
+                  checked
+                />Robos
+                <input
+                  type="checkbox"
+                  class="chkColumna"
+                  name="asesinatos"
+                  id="chkAsesinatos"
+                  checked
+                />Asesinatos
+              </fieldset>
+            </div>
+            <!-- <input type="button" value="Agregar" id="botonABM"/> -->
+            <button type="button" id="botonABM">AGREGAR</button>
+          </form>
+          <div id="tabla-contenedor"></div>
+        </section>
+
+        <section id="seccion-ABM">
+          <!-- <h2 id="titulo-ABM">Formulario ABM</h2> -->
+          <form id="form-ABM">
+            <div class="linea">
+              <label id="idLabel" for="id">ID</label>
+              <input
+                type="text"
+                name="txtId"
+                id="id"
+                autocomplete="off"
+                disabled
+                required
+              />
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="txtNombre"
+                id="nombre"
+                autocomplete="off"
+                required
+              />
+              <label for="apellido">Apellido</label>
+              <input
+                type="text"
+                name="txtApellido"
+                id="apellido"
+                autocomplete="off"
+                required
+              />
+              <label for="edad">Edad</label>
+              <input
+                type="number"
+                name="numEdad"
+                id="edad"
+                min="18"
+                max="65"
+                value="18"
+                required
+              />
+            </div>
+
+            <!-- ----------------------------------------------------------------------------------- -->
+
+            <div class="linea">
+              <div id="selectTipo">
+                <label for="tipo">Tipo:</label>
+                <select name="selTipo" id="tipo">
+                  <option value="Heroes">Heroes</option>
+                  <option value="Villanos">Villanos</option>
+                </select>
+              </div>
+
+              <div id="inputHeroes" class="linea">
+                <label for="alterEgo">Alter Ego</label>
+                <input
+                  type="text"
+                  name="txtAlterEgo"
+                  id="alterEgo"
+                  autocomplete="off"
+                />
+                <label for="ciudad">Ciudad</label>
+                <input
+                  type="text"
+                  name="txtCiudad"
+                  id="ciudad"
+                  autocomplete="off"
+                />
+                <label for="publicado">Publicado</label>
+                <input
+                  type="number"
+                  name="numPublicado"
+                  id="publicado"
+                  min="1940"
+                  max="3000"
+                  value="1940"
+                />
+              </div>
+
+              <div id="inputVillanos" class="linea">
+                <label for="enemigo">Enemigo</label>
+                <input
+                  type="text"
+                  name="txtEnemigo"
+                  id="enemigo"
+                  autocomplete="off"
+                />
+                <label for="robos">Robos</label>
+                <input
+                  type="number"
+                  name="numRobos"
+                  id="robos"
+                  min="0"
+                  value="1"
+                />
+                <label for="asesinatos">Asesinatos</label>
+                <input
+                  type="number"
+                  name="numAsesinatos"
+                  id="asesinatos"
+                  min="0"
+                  value="1"
+                />
+              </div>
+            </div>
+            <div class="linea">
+              <input type="submit" value="Agregar" id="inputSubmit" />
+              <input type="hidden" value="Eliminar" id="inputBaja" />
+              <button type="button" id="botonCancelar">Cancelar</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </main>
+  </body>
+</html>
