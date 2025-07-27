@@ -35,6 +35,7 @@ Así se ve la pantalla cuando se va a crear un nuevo héroe o villano.
 Otra forma más sencilla es simplemente abrir el archivo **index.html** directamente en algún navegador.
 
 ## 📌 Aclaraciones
+
 - Fue creado en 2023, mientras cursaba la carrera de Tecnicatura Universitaria en Programación, en la Universidad Tecnológica Nacional.
 - No se aceptan contribuciones ni está bajo ninguna licencia específica.
 
